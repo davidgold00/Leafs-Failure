@@ -1,0 +1,6 @@
+{
+  "name": "The Maple Leafs Playoff Autopsy: 2016–Present Analytics",
+  "description": "An exhaustive, data-driven investigation into why the Toronto Maple Leafs continue to fail in the Stanley Cup Playoffs despite elite rosters.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
