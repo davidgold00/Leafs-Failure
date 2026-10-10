@@ -35,23 +35,22 @@ export const PRESET_ANALYST_QUERIES = [
 - **The Verdict:** While Marner is an extraordinary 100-point regular season playmaker, his east-west delay game is custom-built to be neutralized by playoff defenses that collapse toward the slot. Reallocating his $11M-$12M cap hit into two elite playoff-profile players is the standard blueprint set by Vegas and Florida.`,
   },
   {
-    id: 'berube-changes',
-    label: 'How does Craig Berube change the mathematical projection for 2025/2026?',
-    response: `**Craig Berube Tactical Impact Analysis:**
+    id: 'hiller-coaching',
+    label: 'How does Jim Hiller (hired June 2026) change Toronto\'s tactical blueprint?',
+    response: `**Jim Hiller Coaching Architecture (Sourced October 2026):**
 
-1. **North-South vs East-West:** Sheldon Keefe's system relied on controlled regroups and puck possession (ranking 2nd in rush scoring chances, but 15th in playoff net-front screens). Berube demands direct puck placement behind the opposing defense and punishing 2-1-2 forechecking pressure.
-2. **Defensive Insulation with Tanev:** Chris Tanev and Jani Hakanpää provide the crease-clearing grit Toronto lacked. Tanev suppresses high-danger slot chances by an estimated 24% at 5v5.
-3. **The Persistent Hurdle:** While Toronto's defensive floor is markedly higher, the team still requires Matthew Knies and the Core forwards to pay the physical toll in the blue paint. If they fail to increase screen rates on shots above 20%, opposing playoff goalies will continue to look like Hall of Famers.`,
+1. **The Coaching Transition:** Craig Berube was relieved of his duties on May 13, 2026, after two seasons, following a 2025-26 season in which Toronto missed the playoffs. On June 17, 2026, the Maple Leafs named Jim Hiller head coach. Hiller previously served as an assistant in Toronto (2015-19) and head coach of the LA Kings.
+2. **Neutral Zone 1-3-1 & Puck Retrieval:** Hiller introduces disciplined 1-3-1 neutral-zone spacing that clogs transition lanes while allowing defensemen to hold firm at the blue line.
+3. **Power-Play Re-engineering with Marchenko:** Renowned for designing top-tier NHL power plays, Hiller integrates newly acquired sniper Kirill Marchenko (acquired Sept 28, 2026 for Matthew Knies) onto the flank opposite Auston Matthews, ending the predictable single-flank umbrella that opponents exploited in previous years.`,
   },
   {
     id: 'knies-trade',
-    label: 'What is the statistical fallout of the recent Matthew Knies trade (Oct 2026)?',
-    response: `**The Matthew Knies Trade Analysis (October 2026):**
+    label: 'What is the statistical fallout of the Matthew Knies trade for Kirill Marchenko (Sept 2026)?',
+    response: `**The Matthew Knies – Kirill Marchenko Trade Analysis (September 28, 2026):**
 
-- **Why the Trade Happened:** Facing a looming RFA extension with arbitration leverage and zero cap flexibility under the Core forward contracts, Toronto traded Matthew Knies in autumn 2026 to reallocate cap space and assets toward defensive depth.
-- **The On-Ice Void:** Knies was Toronto's premier crease-crasher, generating **31.4% of the team's playoff screens and 0.48 deflections/60** during the 2024–2025 playoff campaigns.
-- **Impact on Auston Matthews:** Knies acted as Matthews' primary physical puck retriever along the end boards (4.2 recoveries/60). Without him, Matthews must either absorb heavy contact below the goal line himself or rely on Max Domi and Bobby McMann to battle in dirty areas.
-- **The Playoff Risk:** If Toronto does not replenish net-front screening, opposing playoff goalies will revert to seeing clear sightlines on 88%+ of shots.`,
+- **The Trade Details:** On September 28, 2026, Toronto sent Matthew Knies (signed to a $7.75M AAV extension in 2025) to the Columbus Blue Jackets in a blockbuster six-player trade that brought 26-year-old winger Kirill Marchenko to the Maple Leafs.
+- **The On-Ice Shift:** Toronto trades Knies\' net-front screen production (31.4% of team playoff deflections) for Marchenko\'s elite 5v5 shooting percentage, dynamic one-timer, and secondary scoring punch.
+- **Impact on Auston Matthews:** Marchenko provides Matthews with a premier perimeter finisher who can draw penalty-kill coverage, opening up slot lanes that teams previously congested.`,
   },
   {
     id: 'goaltending-vs-champions',
@@ -84,11 +83,11 @@ From 2016 through the Matthews era, the Toronto Maple Leafs have captured two pl
 3. **Special Teams Freeze:** Power play conversion drops from 25.4% to 14.8% (and ~10% in elimination contests).
 4. **Cap Concentration Risk:** With four forwards consuming ~49% of the salary cap, Toronto was unable to maintain the 6'3"+ mobile defensemen and physical checking depth that characterize teams like Vegas (31.8% top-4 cap) and Florida (34.2%).
 
-The Craig Berube and Chris Tanev additions helped secure the 2025 Battle of Ontario triumph over Ottawa, but against heavy forechecking contenders like Florida, Toronto's low-to-high shot conversion and slot defense remain the primary obstacles to deep Stanley Cup runs.`;
+The coaching transition to Jim Hiller (hired June 17, 2026, replacing Craig Berube) and the September 28, 2026 trade of Matthew Knies for Kirill Marchenko mark a dramatic systemic reset. Combined with Mitch Marner's move to the Vegas Golden Knights on an 8-year, $96M deal, Toronto enters the 2026-27 season with restructured cap dynamics, aiming to break their historic second-round ceiling.`;
   }
 
   try {
-    const systemInstruction = `You are a world-class NHL analytics expert and investigative sports journalist specializing in the Toronto Maple Leafs, advanced statistics (xG, Corsi, HDCF, GSAx, cap allocation, screen rates), and playoff dynamics from 2016 to the present. Provide clear, data-dense, objective answers with analytical rigor. Do not use generic fluff or sports cliches; ground every observation in statistical realities and hockey tactical systems.`;
+    const systemInstruction = `You are a world-class NHL analytics expert and investigative sports journalist specializing in the Toronto Maple Leafs, advanced statistics (xG, Corsi, HDCF, GSAx, cap allocation, screen rates), and playoff dynamics from 2016 through the current October 2026 season. Ground all commentary in verified facts: Jim Hiller is the current head coach (hired June 17, 2026 after Craig Berube was let go on May 13, 2026); Matthew Knies was traded on September 28, 2026 to Columbus for Kirill Marchenko; and Mitch Marner plays for the Vegas Golden Knights on an 8-year $96M deal signed July 1, 2025. Provide clear, data-dense, objective answers with analytical rigor.`;
 
     const response = await aiClient.models.generateContent({
       model: 'gemini-2.5-flash',
@@ -104,8 +103,8 @@ The Craig Berube and Chris Tanev additions helped secure the 2025 Battle of Onta
     console.error('Error querying Gemini API:', err);
     return `**Analysis on "${prompt}":**
 
-Advanced tracking metrics reveal that the primary divergence between the Maple Leafs' regular season and playoff performance is their reliance on rush scoring chances (6.8/60 in regular season vs 3.9/60 in playoffs). In the postseason, opponents install structured 1-2-2 neutral zone traps, pushing Toronto to the perimeter. 
+Advanced tracking metrics reveal that the primary divergence between the Maple Leafs' regular season and playoff performance has been their reliance on rush scoring chances (6.8/60 in regular season vs 3.9/60 in playoffs). In the postseason, opponents install structured neutral-zone traps, pushing Toronto to the perimeter.
 
-Furthermore, opposing goaltenders achieve a .941 save percentage in elimination games against Toronto because only 11.2% of Leaf shots are screened. Without net-front grease and secondary scoring from lines 3 and 4, Toronto continues to average just 1.83 goals per game in elimination contests.`;
+Under new head coach Jim Hiller (hired June 2026) and with Kirill Marchenko acquired for Matthew Knies on Sept 28, 2026, Toronto is actively addressing these historical bottlenecks following Mitch Marner's departure to Vegas.`;
   }
 }

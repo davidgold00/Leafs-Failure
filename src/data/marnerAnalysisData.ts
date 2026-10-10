@@ -183,7 +183,7 @@ export const MARNER_SCENARIOS: MarnerOptionModel[] = [
       'Breaks the 49.7% cap stranglehold locked into four forwards.',
       'Enables signing an elite top-pairing physical defender ($6.5M) and a genuine 3C shutdown center ($4.5M).',
       'Aligns roster construction with Florida & Vegas blueprint: balanced depth, physical board battle dominance, zero forwards above $10.5M.',
-      'Clears the ice for Craig Berube\'s heavy forecheck philosophy, where timid perimeter play is eliminated.',
+      'Clears the ice for Jim Hiller\'s structured transition philosophy, where timid perimeter play is eliminated.',
     ],
     cons: [
       'Losing a 95-100 point regular season playmaker for zero asset return (historic asset mismanagement optics).',
@@ -248,15 +248,25 @@ export const MARNER_SCENARIOS: MarnerOptionModel[] = [
 ];
 
 export const KNIES_TRADE_ANALYSIS = {
-  date: 'Autumn 2026 (Recent Trade)',
-  narrative: 'The Ultimate Cap Domino: How the Core Four Stranglehold Forced the Matthew Knies Trade',
-  summary: 'In autumn 2026, the Toronto Maple Leafs traded forward Matthew Knies. The root cause was not on-ice performance, but mathematical cap insolvency: with Matthews, Nylander, and the Marner/Tavares commitments consuming the cap ceiling, Toronto could not accommodate Knies\' escalating contract demands while preserving blue-line defense.',
+  date: 'September 28, 2026 (Official Transaction)',
+  source: 'NHL.com / Columbus Blue Jackets & Toronto Maple Leafs Official Release',
+  narrative: 'The Blockbuster Realignment: Matthew Knies Traded for Kirill Marchenko',
+  summary: 'On September 28, 2026, the Toronto Maple Leafs traded forward Matthew Knies to the Columbus Blue Jackets in a major six-player deal that brought 26-year-old scoring winger Kirill Marchenko to Toronto. Knies, who had signed a six-year, $46.5-million extension ($7.75M AAV) on July 2, 2025, departed after persistent trade rumors, addressing Toronto\'s need for dynamic offensive variety under new head coach Jim Hiller.',
   onIceImpact: {
-    lostNetFrontDisruption: 'Knies generated 31.4% of Toronto\'s high-danger playoff screens and 0.48 deflections/60 in 2024–2025.',
-    forecheckImpact: 'Ranked #1 among Leafs forwards in offensive-zone loose puck recoveries along the end boards (4.2/60).',
-    matthewsComplement: 'Served as the physical puck retriever on Matthews\' flank, absorbing cross-checks to free up slot ice.',
+    lostNetFrontDisruption: 'Knies generated 31.4% of Toronto\'s high-danger playoff screens and 0.48 deflections/60 during his tenure.',
+    marchenkoReturn: 'Kirill Marchenko brings elite one-timer execution, high-end 5v5 goal creation (25+ goal scorer), and dynamic zone-entry passing to complement Matthews.',
+    matthewsComplement: 'Marchenko provides Matthews with a dangerous shooting threat on the opposite wing, preventing defenses from cheating toward Matthews alone.',
   },
-  strategicTakeaway: 'The trade of Matthew Knies is the starkest proof yet of the cost of the Core Four cap model: it forces management to shed young, homegrown playoff-style talent to service star contracts.',
+  strategicTakeaway: 'Swapping Knies\' net-front grind for Marchenko\'s perimeter release and possession creates a more balanced, multi-threat top-six attack under Jim Hiller\'s transition scheme.',
+};
+
+export const MARNER_ACTUAL_DEPARTURE = {
+  destination: 'Vegas Golden Knights',
+  date: 'July 1, 2025',
+  contractDetails: '8 Years, $96,000,000 ($12,000,000 AAV through 2032–33)',
+  terms: 'Sign-and-trade agreement ending a decade with the Maple Leafs',
+  source: 'NHL.com / CapWages Official Registry',
+  verdictRetrospective: 'By facilitating Marner\'s move to Vegas and resetting their cap ceiling, Toronto avoided committing $12M+ into an aging winger through his mid-30s, redirecting financial resources toward blueline depth and the subsequent acquisition of Kirill Marchenko.',
 };
 
 export const STRATEGIC_SCORECARD = [

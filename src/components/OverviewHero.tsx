@@ -146,7 +146,7 @@ export const OverviewHero: React.FC<OverviewHeroProps> = ({ onNavigate, onOpenAn
           <h2 className="text-lg font-bold text-white tracking-wide uppercase font-athletic">
             The Fundamental Autopsy Thesis
           </h2>
-          <span className="text-xs text-slate-400 font-mono-numbers">Sample: 57 Playoff Games (2017–2024)</span>
+          <span className="text-xs text-slate-400 font-mono-numbers">Sample: 69 Playoff Games (2017–2025) · Sourced Oct 2026</span>
         </div>
         <p className="text-sm text-slate-300 leading-relaxed">
           The Toronto Maple Leafs have not failed due to bad luck, officiating conspiracies, or random goalie hot streaks. Their failures are <strong className="text-white">mechanically engineered by how their roster was constructed and how their offensive system generates shots</strong>.

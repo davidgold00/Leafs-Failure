@@ -6,6 +6,7 @@ import {
   MULTI_YEAR_TRAJECTORY_PROJECTIONS,
   STRATEGIC_SCORECARD,
   KNIES_TRADE_ANALYSIS,
+  MARNER_ACTUAL_DEPARTURE,
 } from '../data/marnerAnalysisData';
 import marnerLockerImg from '../assets/images/marner_crossroads_1791580405832.jpg';
 
@@ -31,16 +32,27 @@ export const MarnerCrossroadsPage: React.FC = () => {
         <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-amber-400 mb-2">
           <span>Special Investigation</span>
           <span aria-hidden="true">·</span>
-          <span>Franchise Trajectory Evaluation</span>
+          <span>Sourced October 2026 Analysis</span>
           <span aria-hidden="true">·</span>
-          <span>Contract Crossroads</span>
+          <span>Contract & Trajectory Evaluation</span>
         </div>
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight uppercase font-athletic">
-          The Mitch Marner Crossroads: The Decision That Dictates Toronto's Decade
+          The Mitch Marner Crossroads: Evaluating The Vegas Departure & Franchise Trajectory
         </h1>
         <p className="mt-3 text-sm sm:text-base text-slate-300 max-w-4xl leading-relaxed">
-          No individual decision represents the existential philosophy of the Toronto Maple Leafs more than the dilemma surrounding Mitch Marner. Is he an irreplaceable 100-point playmaker whose departure would trigger a catastrophic regression, or is his $11M-$12.5M cap allocation the exact structural bottleneck that has choked Toronto out of the playoffs for eight straight seasons?
+          On July 1, 2025, a decade-long chapter concluded when Mitch Marner departed Toronto in a sign-and-trade agreement to the <strong className="text-white">Vegas Golden Knights</strong> on an 8-year, $96-million contract ($12.0M AAV). Now in October 2026, under new head coach <strong className="text-white">Jim Hiller</strong> and with <strong className="text-white">Kirill Marchenko</strong> acquired in the Matthew Knies blockbuster trade, we evaluate whether letting Marner move was the right strategic pivot for the franchise's trajectory.
         </p>
+
+        {/* Verified Transaction Strip */}
+        <div className="mt-4 p-3.5 rounded-lg bg-slate-900 border border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
+          <div className="flex items-center gap-3">
+            <span className="font-bold text-amber-400 uppercase tracking-wider font-mono-numbers">Confirmed Transaction:</span>
+            <span className="text-slate-200">{MARNER_ACTUAL_DEPARTURE.destination} · {MARNER_ACTUAL_DEPARTURE.contractDetails}</span>
+          </div>
+          <span className="text-slate-400 font-mono-numbers text-[11px]">
+            Source: {MARNER_ACTUAL_DEPARTURE.source}
+          </span>
+        </div>
       </div>
 
       {/* Hero Visual & Executive Verdict Card */}
@@ -276,9 +288,9 @@ export const MarnerCrossroadsPage: React.FC = () => {
           </div>
 
           <div className="p-3 rounded-lg bg-slate-950/80 border border-slate-800">
-            <div className="text-slate-400 font-sans text-[11px]">Board Battles & Retrieval</div>
-            <div className="text-sm font-bold text-amber-400 mt-1">4.2 O-Zone Recoveries/60</div>
-            <div className="text-[10px] text-slate-500 mt-0.5">{KNIES_TRADE_ANALYSIS.onIceImpact.forecheckImpact}</div>
+            <div className="text-slate-400 font-sans text-[11px]">Kirill Marchenko Acquired</div>
+            <div className="text-sm font-bold text-amber-400 mt-1">26-Yr-Old Top-6 Sniper</div>
+            <div className="text-[10px] text-slate-500 mt-0.5">{KNIES_TRADE_ANALYSIS.onIceImpact.marchenkoReturn}</div>
           </div>
 
           <div className="p-3 rounded-lg bg-slate-950/80 border border-slate-800">

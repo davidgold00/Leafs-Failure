@@ -45,7 +45,7 @@ export const PredictionOutlook: React.FC = () => {
           What Is Potentially Different This Year? The Algorithmic Verdict
         </h2>
         <p className="mt-2 text-sm text-slate-300 max-w-3xl leading-relaxed">
-          Has Toronto finally fixed the mechanical flaws that sabotaged eight consecutive postseasons, or are they doomed to repeat the cycle? We evaluate the Craig Berube coaching shift, roster additions, and test them against the Four Playoff Invariants.
+          Has Toronto finally fixed the mechanical flaws that sabotaged previous postseasons, or are they doomed to repeat the cycle? We evaluate the Jim Hiller coaching transition (hired June 17, 2026), the Kirill Marchenko trade acquisition, and test them against the Four Playoff Invariants.
         </p>
       </div>
 
