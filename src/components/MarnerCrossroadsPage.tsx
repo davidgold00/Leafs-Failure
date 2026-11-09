@@ -8,7 +8,7 @@ import {
   KNIES_TRADE_ANALYSIS,
   MARNER_ACTUAL_DEPARTURE,
 } from '../data/marnerAnalysisData';
-import marnerLockerImg from '../assets/images/marner_crossroads_1791580405832.jpg';
+import marnerImg from '../assets/images/real_marner_action.jpg';
 
 export const MarnerCrossroadsPage: React.FC = () => {
   // Cap Reallocation Simulator State
@@ -59,14 +59,14 @@ export const MarnerCrossroadsPage: React.FC = () => {
       <div className="grid grid-cols-1 lg:grid-cols-12 rounded-xl bg-slate-900/80 border border-slate-800 overflow-hidden shadow-2xl items-stretch">
         <div className="lg:col-span-5 relative min-h-[360px]">
           <img
-            src={marnerLockerImg}
-            alt="Mitch Marner jersey in locker room stall"
+            src={marnerImg}
+            alt="Real Photograph of Mitch Marner in Toronto Maple Leafs jersey"
             referrerPolicy="no-referrer"
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover object-top"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-slate-900/95" />
           <div className="absolute bottom-4 left-4 right-4 text-xs text-slate-300/90 bg-slate-950/80 p-3 rounded border border-slate-800">
-            <span className="font-semibold text-white">#16 In Elimination Hockey:</span> 1 goal in 12 elimination games across 8 seasons (312+ consecutive minutes without a goal).
+            <span className="font-semibold text-white">Mitch Marner:</span> Real photo (Wikimedia Commons). 1 goal in 12 elimination games across 8 seasons in Toronto.
           </div>
         </div>
 

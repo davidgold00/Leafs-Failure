@@ -32,6 +32,14 @@ export const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab, onOpenA
             Executive Summary
           </button>
           <button
+            onClick={() => setActiveTab('stories')}
+            className={`whitespace-nowrap shrink-0 transition-colors hover:text-white cursor-pointer ${
+              activeTab === 'stories' ? 'text-blue-400 border-b-2 border-blue-400 py-1 font-semibold' : 'py-1'
+            }`}
+          >
+            Story Cards
+          </button>
+          <button
             onClick={() => setActiveTab('forensics')}
             className={`whitespace-nowrap shrink-0 transition-colors hover:text-white cursor-pointer ${
               activeTab === 'forensics' ? 'text-blue-400 border-b-2 border-blue-400 py-1 font-semibold' : 'py-1'
@@ -77,9 +85,13 @@ export const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab, onOpenA
         <div className="flex items-center gap-3 shrink-0">
           <button
             onClick={onOpenAnalyst}
-            className="px-3.5 py-1.5 text-xs font-semibold uppercase tracking-wider text-white bg-blue-600 hover:bg-blue-500 rounded-md transition-colors whitespace-nowrap shrink-0 cursor-pointer shadow-sm hover:shadow-blue-500/20"
+            className="px-3.5 py-1.5 text-xs font-semibold uppercase tracking-wider text-white bg-blue-600 hover:bg-blue-500 rounded-md transition-colors whitespace-nowrap shrink-0 cursor-pointer shadow-sm hover:shadow-blue-500/20 flex items-center gap-2"
           >
-            Ask AI Analyst
+            <span className="flex h-2 w-2 relative">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-400"></span>
+            </span>
+            <span>Real-Time AI Analyst</span>
           </button>
         </div>
       </div>

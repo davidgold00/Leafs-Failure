@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { CORE_METRIC_DISPARITIES, GOALTENDING_DEEP_DIVE } from '../data/advancedMetricsData';
+import { InteractiveTrendChart } from './InteractiveTrendChart';
 
 export const ForensicMetrics: React.FC = () => {
   const [activeVector, setActiveVector] = useState<'rush' | 'powerplay' | 'goalies' | 'defense' | 'slot'>('rush');
@@ -322,6 +323,9 @@ export const ForensicMetrics: React.FC = () => {
           </div>
         )}
       </div>
+      
+      {/* Interactive Trend Chart with Hoverable Breakdowns */}
+      <InteractiveTrendChart />
 
       {/* Comprehensive Metric Comparison Table */}
       <div className="space-y-4">

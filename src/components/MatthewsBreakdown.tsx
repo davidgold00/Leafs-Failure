@@ -1,5 +1,5 @@
 import React from 'react';
-import matthewsImg from '../assets/images/matthews_era_playoffs_1791580396030.jpg';
+import matthewsImg from '../assets/images/real_matthews_sweat.jpg';
 
 export const MatthewsBreakdown: React.FC = () => {
   return (
@@ -24,13 +24,13 @@ export const MatthewsBreakdown: React.FC = () => {
         <div className="lg:col-span-5 relative min-h-[320px]">
           <img
             src={matthewsImg}
-            alt="Auston Matthews on the playoff bench"
+            alt="Auston Matthews in authentic Toronto Maple Leafs uniform (Real Photo)"
             referrerPolicy="no-referrer"
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover object-top"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-slate-900/90" />
           <div className="absolute bottom-3 left-3 right-3 text-xs text-slate-300/80 bg-slate-950/80 p-2.5 rounded border border-slate-800">
-            <span className="font-semibold text-white">#34 In Elimination Games:</span> 3 goals in 14 elimination games (6.5% shooting percentage).
+            <span className="font-semibold text-white">Auston Matthews:</span> Real NHL photo by Azadeh Kashani (Wikimedia Commons). 3 goals in 14 elimination games.
           </div>
         </div>
 

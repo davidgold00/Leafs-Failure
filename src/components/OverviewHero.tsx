@@ -1,6 +1,6 @@
 import React from 'react';
 import { ELIMINATION_GAMES_RECORD } from '../data/playoffSeriesData';
-import heroImg from '../assets/images/leafs_editorial_hero_1791580386046.jpg';
+import heroImg from '../assets/images/real_hero_playoff_action.jpg';
 
 interface OverviewHeroProps {
   onNavigate: (tab: string) => void;
@@ -19,7 +19,7 @@ export const OverviewHero: React.FC<OverviewHeroProps> = ({ onNavigate, onOpenAn
               <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-blue-400 mb-3">
                 <span>Investigative Sports Analytics</span>
                 <span aria-hidden="true">·</span>
-                <span>Oct 9, 2026 Edition</span>
+                <span>Oct 12, 2026 Edition</span>
                 <span aria-hidden="true">·</span>
                 <span>The Matthews Era</span>
               </div>
@@ -36,22 +36,30 @@ export const OverviewHero: React.FC<OverviewHeroProps> = ({ onNavigate, onOpenAn
 
             <div className="mt-8 pt-6 border-t border-slate-800/80 flex flex-wrap items-center gap-3">
               <button
-                onClick={() => onNavigate('forensics')}
-                className="px-4 py-2.5 text-xs font-bold uppercase tracking-wider text-white bg-blue-600 hover:bg-blue-500 rounded-md transition-colors whitespace-nowrap cursor-pointer shadow-md hover:shadow-blue-500/20"
+                onClick={() => onNavigate('stories')}
+                className="px-4 py-2.5 text-xs font-bold uppercase tracking-wider text-white bg-blue-600 hover:bg-blue-500 rounded-md transition-colors whitespace-nowrap cursor-pointer shadow-md hover:shadow-blue-500/20 flex items-center gap-2"
               >
-                Inspect The 5 Failure Vectors
+                <span>Browse 5 Story Cards</span>
+                <span className="text-[10px] px-1.5 py-0.2 bg-blue-800/80 rounded">New</span>
+              </button>
+              <button
+                onClick={() => onNavigate('forensics')}
+                className="px-4 py-2.5 text-xs font-semibold uppercase tracking-wider text-slate-200 hover:text-white bg-slate-800/90 hover:bg-slate-700/90 border border-slate-700 rounded-md transition-colors whitespace-nowrap cursor-pointer"
+              >
+                Inspect Forensic Vectors & Charts
               </button>
               <button
                 onClick={() => onNavigate('marner')}
                 className="px-4 py-2.5 text-xs font-bold uppercase tracking-wider text-amber-300 bg-amber-950/40 hover:bg-amber-900/50 border border-amber-500/40 rounded-md transition-colors whitespace-nowrap cursor-pointer"
               >
-                The Marner Decision Deep Dive
+                The Marner & Knies Hub
               </button>
               <button
                 onClick={onOpenAnalyst}
-                className="px-4 py-2.5 text-xs font-semibold uppercase tracking-wider text-slate-300 hover:text-white bg-slate-800/80 hover:bg-slate-700/80 border border-slate-700 rounded-md transition-colors whitespace-nowrap cursor-pointer"
+                className="px-4 py-2.5 text-xs font-semibold uppercase tracking-wider text-white bg-slate-800/90 hover:bg-slate-700/90 border border-slate-700 rounded-md transition-colors whitespace-nowrap cursor-pointer flex items-center gap-2"
               >
-                Query AI Playoff Analyst
+                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                <span>Real-Time AI Analyst (Live Grounded)</span>
               </button>
             </div>
           </div>
@@ -60,13 +68,13 @@ export const OverviewHero: React.FC<OverviewHeroProps> = ({ onNavigate, onOpenAn
           <div className="lg:col-span-5 relative min-h-[300px] lg:min-h-full">
             <img
               src={heroImg}
-              alt="Playoff hockey arena atmosphere in Toronto"
+              alt="Real Stanley Cup Playoffs action photograph: Toronto Maple Leafs"
               referrerPolicy="no-referrer"
-              className="absolute inset-0 w-full h-full object-cover"
+              className="absolute inset-0 w-full h-full object-cover object-center"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent lg:bg-gradient-to-r lg:from-slate-900 lg:via-transparent lg:to-transparent" />
             <div className="absolute bottom-4 left-4 right-4 text-xs text-slate-300/80 bg-slate-950/70 backdrop-blur-sm p-3 rounded border border-slate-800/80">
-              <span className="font-semibold text-white">Scotiabank Arena Under Spotlight:</span> Two series victories (Tampa Bay 2023, Ottawa 2025) across 11 playoff rounds.
+              <span className="font-semibold text-white">Authentic Playoff Action:</span> Toronto Maple Leafs in Stanley Cup Playoff action (Source: Wikimedia Commons).
             </div>
           </div>
         </div>
